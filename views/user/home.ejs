@@ -1,0 +1,26 @@
+<% include('../layouts/header.ejs') %>
+
+<h2>Welcom <%= user.name %></h2>
+
+<table width="30%">
+    <tr>
+        <tr>
+            <td>Name :</td>
+            <td><%= user.name %></td>
+        </tr>
+        <td>Email:</td>
+        <td><%= user.email %></td>
+    </tr>
+
+    <tr>
+        <td>Mobile :</td>
+        <td><%= user.mobile %></td>
+    </tr>
+
+</table>
+
+
+<button><a href="/logout">Logout</a></button>
+
+
+<% include('../layouts/footer.ejs') %>
